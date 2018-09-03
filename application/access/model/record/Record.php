@@ -1,8 +1,7 @@
 <?php
-namespace app\access\model\customer;
+namespace app\access\model\record;
 use think\Model;
 
 class Record extends Model
 {
-    protected $pk = 'recordId';
 }

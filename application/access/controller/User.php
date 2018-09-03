@@ -2,7 +2,7 @@
 namespace app\access\controller;
 use think\Request;
 use think\Config;
-use app\access\model\Customer;
+use app\access\model\customer\Customer;
 class User
 {
 	var $error = array();

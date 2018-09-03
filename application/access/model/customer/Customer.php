@@ -4,5 +4,4 @@ use think\Model;
 
 class Customer extends Model
 {
-    protected $pk = 'cusId';
 }
