@@ -67,7 +67,7 @@ class User
         Config::load(APP_PATH.'/string.php');
         // $data['data'] = $request->param();
         if($request->param('openId') == '' || $request->param('openId') == null){
-            $this->error['1000103'] = config('user_error.1000103');
+            $this->error['1000201'] = config('user_error.1000103');
         }
         if(count($this->error) == 0){
             $customer = Customer::get(['wxOpenId' => $request->param('openId')]);
@@ -75,7 +75,7 @@ class User
                 $data['status'] = 1;
                 $data['data'] = $customer;
             }else{
-                $this->error['1000106'] = config('user_error.1000106');
+                $this->error['1000305'] = config('user_error.1000305');
             }
         }
         $data['error'] = $this->error;

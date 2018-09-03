@@ -13,3 +13,4 @@
 use think\Route;
 Route::rule('addUser','access/user/add');
 Route::rule('checkUser','access/user/getCustomer');
+Route::rule('addRecord','access/myrecord/add');
